@@ -6,12 +6,10 @@ namespace Traversal.CoreLayer.DataAccess.Concrete
     public class GenericRepository<T> : IGenericDal<T> where T : class, new()
     {
         protected readonly DbContext _context;
-        private readonly DbSet<T> _dbset;
 
-        public GenericRepository(DbContext context, DbSet<T> dbset)
+        public GenericRepository(DbContext context)
         {
             _context = context;
-            _dbset = dbset;
         }
 
         public void Insert(T entity)
