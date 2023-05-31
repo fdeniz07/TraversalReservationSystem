@@ -2,7 +2,7 @@
 {
     public interface IGenericDal<T> where T : class
     {
-        void Add(T entity);
+        void Insert(T entity);
 
         void Update(T entity);
 

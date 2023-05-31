@@ -14,4 +14,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Traversal.BusinessLayer\Traversal.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Traversal.CoreLayer\Traversal.CoreLayer.csproj" />
+    <ProjectReference Include="..\Traversal.DataAccess\Traversal.DataAccess.csproj" />
+    <ProjectReference Include="..\Traversal.Entity\Traversal.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

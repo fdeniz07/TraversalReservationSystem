@@ -3,15 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversal.MVC", "Traversal.MVC\Traversal.MVC.csproj", "{B1908DC1-3E79-4085-9145-63E4762C329C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversal.MVC", "Traversal.MVC\Traversal.MVC.csproj", "{B1908DC1-3E79-4085-9145-63E4762C329C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversal.Entity", "Traversal.Entity\Traversal.Entity.csproj", "{64AA60DC-651D-4B06-BCB7-3BB3DE844168}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversal.Entity", "Traversal.Entity\Traversal.Entity.csproj", "{64AA60DC-651D-4B06-BCB7-3BB3DE844168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversal.DataAccess", "Traversal.DataAccess\Traversal.DataAccess.csproj", "{77F4F9FD-2128-47CB-9C3A-BCB36E56B525}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversal.DataAccess", "Traversal.DataAccess\Traversal.DataAccess.csproj", "{77F4F9FD-2128-47CB-9C3A-BCB36E56B525}"
+	ProjectSection(ProjectDependencies) = postProject
+		{969E10C0-3527-47B1-8DE7-A713F3E8D336} = {969E10C0-3527-47B1-8DE7-A713F3E8D336}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversal.CoreLayer", "Traversal.CoreLayer\Traversal.CoreLayer.csproj", "{969E10C0-3527-47B1-8DE7-A713F3E8D336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversal.CoreLayer", "Traversal.CoreLayer\Traversal.CoreLayer.csproj", "{969E10C0-3527-47B1-8DE7-A713F3E8D336}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversal.BusinessLayer", "Traversal.BusinessLayer\Traversal.BusinessLayer.csproj", "{D906FBFD-BF5C-48ED-88A1-07F8A5586F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversal.BusinessLayer", "Traversal.BusinessLayer\Traversal.BusinessLayer.csproj", "{D906FBFD-BF5C-48ED-88A1-07F8A5586F46}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64AA60DC-651D-4B06-BCB7-3BB3DE844168} = {64AA60DC-651D-4B06-BCB7-3BB3DE844168}
+		{77F4F9FD-2128-47CB-9C3A-BCB36E56B525} = {77F4F9FD-2128-47CB-9C3A-BCB36E56B525}
+		{969E10C0-3527-47B1-8DE7-A713F3E8D336} = {969E10C0-3527-47B1-8DE7-A713F3E8D336}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
