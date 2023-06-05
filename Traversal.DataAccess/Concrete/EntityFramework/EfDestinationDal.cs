@@ -7,6 +7,10 @@ namespace Traversal.DataAccess.Concrete.EntityFramework
 {
     public class EfDestinationDal : GenericRepository<Destination>, IDestinationDal
     {
+        public EfDestinationDal()
+        {
+        }
+
         public EfDestinationDal(DbContext context) : base(context)
         {
         }
