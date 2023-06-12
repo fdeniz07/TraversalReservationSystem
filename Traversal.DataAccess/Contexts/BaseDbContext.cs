@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Traversal.Entity.Concrete;
 
-namespace Traversal.DataAccess.Concrete
+namespace Traversal.DataAccess.Contexts
 {
-    public class Context : DbContext
+    public class BaseDbContext : DbContext
     {
+        protected IConfiguration Configuration { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

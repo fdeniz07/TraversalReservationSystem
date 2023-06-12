@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Traversal.DataAccess.Concrete;
+using Traversal.DataAccess.Contexts;
 
 #nullable disable
 
 namespace Traversal.DataAccess.Migrations
 {
-    [DbContext(typeof(Context))]
+    [DbContext(typeof(BaseDbContext))]
     [Migration("20230529230822_migration1")]
     partial class migration1
     {

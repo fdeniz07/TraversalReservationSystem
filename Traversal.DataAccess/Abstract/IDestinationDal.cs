@@ -3,7 +3,8 @@ using Traversal.Entity.Concrete;
 
 namespace Traversal.DataAccess.Abstract
 {
-    public interface IDestinationDal:IGenericDal<Destination>
+    public interface IDestinationDal : IGenericDal<Destination>
     {
+
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace Traversal.CoreLayer.Entity.Abstract
+﻿using System;
+
+namespace Traversal.CoreLayer.Entity.Abstract
 {
     public abstract class EntityBase
     {

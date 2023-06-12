@@ -5,5 +5,6 @@ namespace Traversal.DataAccess.Abstract
 {
     public interface IAboutDal : IGenericDal<About>
     {
+
     }
 }
